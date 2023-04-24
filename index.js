@@ -25,3 +25,6 @@ app.use(session({
         // secure: true
     }
 }))
+
+const userRouter = require("./src/routes/user.route")
+app.use("/",userRouter);
